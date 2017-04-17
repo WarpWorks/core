@@ -1,0 +1,48 @@
+{
+  "name": "@warp-works/core",
+  "version": "0.7.0",
+  "description": "Core library for WarpWorks",
+  "main": "lib/index.js",
+  "scripts": {
+    "coverage": "nyc npm run -s test",
+    "lint:node": "eslint --fix --ignore-pattern='*.test.js' 'lib/*.js'",
+    "lint:test": "eslint --fix --config='.eslintrc.test.json' 'lib/*.test.js'",
+    "lint": "npm run -s lint:node && npm run -s lint:test",
+    "test": "mocha 'lib/**/*.unit.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarpWorks/core.git"
+  },
+  "keywords": [
+    "WarpWorks"
+  ],
+  "author": {
+    "name": "Dirk Slama",
+    "email": "dirk.slama@gmx.de"
+  },
+  "contributors": [
+    {
+      "name": "Hữu Ðà Trần",
+      "email": "huuda.tran@quoininc.com",
+      "url": "https://www.quoininc.com/staff/huu-da-tran/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WarpWorks/core/issues"
+  },
+  "homepage": "https://github.com/WarpWorks/core#readme",
+  "devDependencies": {
+    "@quoin/eslint-config-quoin": "0.1.0",
+    "@quoin/node-test-helpers": "0.1.7",
+    "eslint": "3.19.0",
+    "mocha": "3.2.0",
+    "nyc": "10.2.0"
+  },
+  "dependencies": {
+    "@quoin/node-rc": "0.1.0",
+    "bluebird": "3.5.0",
+    "mongodb": "2.2.25"
+  }
+}

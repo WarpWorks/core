@@ -1,0 +1,7 @@
+/.npmignore
+/.nyc_output
+/.nycrc
+/.eslintrc*
+/lib/**/*.test.js
+/reports
+/*.tgz
