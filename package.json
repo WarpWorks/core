@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/core",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Core library for WarpWorks",
   "main": "lib/index.js",
   "scripts": {
