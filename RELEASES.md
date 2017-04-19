@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.0 - 2017-04-19
+
+- Renaming variables to be in sync with new name.
+
 ## 0.7.2 - 2017-04-17
 
 - Fixed `processCwd`.
