@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.2 - 2017-04-21
+
+- Removed 'runtime' to sync with WarpJS 0.6.1
+
 ## 0.8.1 - 2017-04-21
 
 - Adding the password field.
