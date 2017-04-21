@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.1 - 2017-04-21
+
+- Adding the password field.
+
 ## 0.8.0 - 2017-04-19
 
 - Renaming variables to be in sync with new name.
