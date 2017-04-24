@@ -1,0 +1,73 @@
+//
+// Domain
+//
+
+#WarpWorks: {Domain*}
+
+//
+// MetaModel Entities
+//
+
+Domain:
+- definitionOfMany:number
+- {entities:Entity*}
+
+Entity:
+- isAbstract:boolean, namePlural:string, isRootEntity:boolean, isRootInstance:boolean
+- {basicProperties:BasicProperty*, relationships:Relationship*, pageViews:PageView*, tableViews:TableView*, enums:Enumeration*}
+- parentClass=>Entity
+
+Relationship:
+- isAggregation:boolean, sourceRole, sourceMin:number, sourceMax:number, targetRole, targetMin:number, targetMax:number, targetAverage:number
+- targetEntity=>Entity
+
+Property
+
+BasicProperty(Property):
+- propertyType:[string|text|password|number|boolean|date], defaultValue, constraints, examples
+
+Enumeration(Property):
+- validEnumSelections:[One|ZeroOne|ZeroMany|OneMany]
+- {literals:Literal*}
+
+Literal:
+- position, icon
+
+//
+// View Entities
+//
+
+View:
+- label:string, isDefault:boolean
+
+TableView(View):
+- {tableItems:TableItem*}
+
+TableItem:
+- position:number, label:string
+- property=>Property
+
+PageView(View):
+- {panels:Panel*}
+
+Panel:
+- position:number, label:string, columns:number, alternatingColors:boolean
+- {separatorPanelItems:SeparatorPanelItem*, relationshipPanelItems:RelationshipPanelItem*, basicPropertyPanelItems:BasicPropertyPanelItem*, enumPanelItems:EnumPanelItem*, actions:Action* }
+
+PanelItem:
+- position:number, label:string
+
+SeparatorPanelItem(PanelItem)
+
+RelationshipPanelItem(PanelItem):
+- style:[CSV|Table|Preview]
+- relationship=>Relationship
+
+BasicPropertyPanelItem(PanelItem):
+- basicProperty=>BasicProperty
+
+EnumPanelItem(PanelItem):
+- enumeration=>Enumeration
+
+Action:
+- icon:string, label:string, functionName:string
