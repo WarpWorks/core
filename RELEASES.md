@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.3 - 2017-04-24
+
+- Generated files into the `projectPath`.
+
 ## 0.8.2 - 2017-04-21
 
 - Removed 'runtime' to sync with WarpJS 0.6.1
