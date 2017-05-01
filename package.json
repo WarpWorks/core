@@ -1,12 +1,12 @@
 {
   "name": "@warp-works/core",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Core library for WarpWorks",
   "main": "lib/index.js",
   "scripts": {
     "coverage": "nyc npm run -s test",
-    "lint:node": "eslint --fix --ignore-pattern='*.test.js' 'lib/*.js'",
-    "lint:test": "eslint --fix --config='.eslintrc.test.json' 'lib/*.test.js'",
+    "lint:node": "eslint --fix --ignore-pattern='*.test.js' \"lib/**/*.js\"",
+    "lint:test": "eslint --fix --config='.eslintrc.test.json' \"lib/**/*.test.js\"",
     "lint": "npm run -s lint:node && npm run -s lint:test",
     "test": "mocha 'lib/**/*.unit.test.js'"
   },
@@ -34,15 +34,22 @@
   },
   "homepage": "https://github.com/WarpWorks/core#readme",
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "0.1.3",
+    "@quoin/eslint-config-quoin": "0.1.4",
     "@quoin/node-test-helpers": "0.1.7",
     "eslint": "3.19.0",
+    "eslint-plugin-html": "2.0.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-node": "4.2.2",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
     "mocha": "3.3.0",
-    "nyc": "10.2.0"
+    "nyc": "10.3.0"
   },
   "dependencies": {
     "@quoin/node-rc": "0.1.1",
     "bluebird": "3.5.0",
+    "debug": "2.6.6",
+    "lodash": "4.17.4",
     "mongodb": "2.2.26"
   }
 }

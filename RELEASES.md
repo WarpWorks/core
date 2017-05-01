@@ -1,5 +1,10 @@
 # Releases
 
+## 0.8.4 - 2017-05-01
+
+- Allows to extract from a query, just not `parentID`.
+- Added missing package due to npm node_modules structure.
+
 ## 0.8.3 - 2017-04-24
 
 - Generated files into the `projectPath`.
