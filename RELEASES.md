@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.6 - 2017-05-03
+
+- Allow extracting only the first level of Overview.
+
 ## 0.8.5 - 2017-05-03
 
 - Added basicProperties to handle the property type.
