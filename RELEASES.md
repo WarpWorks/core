@@ -1,5 +1,9 @@
 # Releases
 
+## 0.8.5 - 2017-05-03
+
+- Added basicProperties to handle the property type.
+
 ## 0.8.4 - 2017-05-01
 
 - Allows to extract from a query, just not `parentID`.
