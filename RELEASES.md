@@ -1,5 +1,11 @@
 # Releases
 
+## 0.8.7 - 2017-05-10
+
+- Get WarpJS in `node_modules` if installed, otherwise use relative path (dev
+  mode).
+- Added `package.json`'s version number to the main module.
+
 ## 0.8.6 - 2017-05-03
 
 - Allow extracting only the first level of Overview.
@@ -11,7 +17,7 @@
 ## 0.8.4 - 2017-05-01
 
 - Allows to extract from a query, just not `parentID`.
-- Added missing package due to npm node_modules structure.
+- Added missing package due to npm's `node_modules` structure.
 
 ## 0.8.3 - 2017-04-24
 

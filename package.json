@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/core",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "Core library for WarpWorks",
   "main": "lib/index.js",
   "scripts": {
@@ -35,15 +35,15 @@
   "homepage": "https://github.com/WarpWorks/core#readme",
   "devDependencies": {
     "@quoin/eslint-config-quoin": "0.1.4",
-    "@quoin/node-test-helpers": "0.1.7",
+    "@quoin/node-test-helpers": "0.2.1",
     "eslint": "3.19.0",
-    "eslint-plugin-html": "2.0.1",
+    "eslint-plugin-html": "2.0.3",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-node": "4.2.2",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
     "mocha": "3.3.0",
-    "nyc": "10.3.0"
+    "nyc": "10.3.2"
   },
   "dependencies": {
     "@quoin/node-rc": "0.1.1",
