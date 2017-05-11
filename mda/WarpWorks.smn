@@ -24,7 +24,7 @@ Relationship:
 Property
 
 BasicProperty(Property):
-- propertyType:[string|text|password|number|boolean|date], defaultValue, constraints, examples
+- propertyType:[string|text|password|number|boolean|date], defaultValue, examples
 
 Enumeration(Property):
 - validEnumSelections:[One|ZeroOne|ZeroMany|OneMany]
