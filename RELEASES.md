@@ -1,5 +1,9 @@
 # Releases
 
+## 1.0.0-rc1 - 2017-05-31
+
+- Added option to embed entities.
+
 ## 0.8.7 - 2017-05-10
 
 - Get WarpJS in `node_modules` if installed, otherwise use relative path (dev
