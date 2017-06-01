@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/core",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "description": "Core library for WarpWorks",
   "main": "lib/index.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
     "mocha": "3.4.2",
-    "nyc": "10.3.2"
+    "nyc": "11.0.1"
   },
   "dependencies": {
     "@quoin/node-rc": "0.1.1",
