@@ -13,7 +13,7 @@ Domain:
 - {entities:Entity*}
 
 Entity:
-- isAbstract:boolean, namePlural:string, isRootEntity:boolean, isRootInstance:boolean
+- isAbstract:boolean, namePlural:string, isRootEntity:boolean, isRootInstance:boolean, entityType:[Document|Embedded]
 - {basicProperties:BasicProperty*, relationships:Relationship*, pageViews:PageView*, tableViews:TableView*, enums:Enumeration*}
 - parentClass=>Entity
 
@@ -24,7 +24,7 @@ Relationship:
 Property
 
 BasicProperty(Property):
-- propertyType:[string|text|password|number|boolean|date], defaultValue, constraints, examples
+- propertyType:[string|text|password|number|boolean|date], defaultValue, examples
 
 Enumeration(Property):
 - validEnumSelections:[One|ZeroOne|ZeroMany|OneMany]
