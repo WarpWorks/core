@@ -1,5 +1,9 @@
 # Releases
 
+## 1.0.0-rc3 - 2017-06-06
+
+- Fixed relationship for `isAbstract`.
+
 ## 1.0.0-rc2 - 2017-06-04
 
 - Fixed `domain.authenticateUser()` with new document structure.
