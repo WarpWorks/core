@@ -1,5 +1,9 @@
 # Releases
 
+## 1.0.0-rc4 - 2017-06-09
+
+- Adding the relationship's description on association documents.
+
 ## 1.0.0-rc3 - 2017-06-06
 
 - Fixed relationship for `isAbstract`.
