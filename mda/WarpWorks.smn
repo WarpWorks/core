@@ -8,20 +8,23 @@
 // MetaModel Entities
 //
 
-Domain:
+%Base:
+- name, desc
+
+Domain (Base):
 - definitionOfMany:number
 - {entities:Entity*}
 
-Entity:
+Entity (Base):
 - isAbstract:boolean, namePlural:string, isRootEntity:boolean, isRootInstance:boolean, entityType:[Document|Embedded]
 - {basicProperties:BasicProperty*, relationships:Relationship*, pageViews:PageView*, tableViews:TableView*, enums:Enumeration*}
 - parentClass=>Entity
 
-Relationship:
+Relationship (Base):
 - isAggregation:boolean, sourceRole, sourceMin:number, sourceMax:number, targetRole, targetMin:number, targetMax:number, targetAverage:number
 - targetEntity=>Entity
 
-Property
+%Property (Base)
 
 BasicProperty(Property):
 - propertyType:[string|text|password|number|boolean|date], defaultValue, examples
@@ -30,32 +33,34 @@ Enumeration(Property):
 - validEnumSelections:[One|ZeroOne|ZeroMany|OneMany]
 - {literals:Literal*}
 
-Literal:
+Literal (Base):
 - position, icon
 
 //
 // View Entities
 //
 
-View:
+%View (Base):
 - label:string, isDefault:boolean
 
 TableView(View):
 - {tableItems:TableItem*}
 
-TableItem:
+TableItem (Base):
 - position:number, label:string
 - property=>Property
 
 PageView(View):
 - {panels:Panel*}
+- {actions:Action*}
 
-Panel:
+Panel (Base):
 - position:number, label:string, columns:number, alternatingColors:boolean
 - {separatorPanelItems:SeparatorPanelItem*, relationshipPanelItems:RelationshipPanelItem*, basicPropertyPanelItems:BasicPropertyPanelItem*, enumPanelItems:EnumPanelItem*, actions:Action* }
 
-PanelItem:
-- position:number, label:string
+%PanelItem (Base):
+- position:number, label:string, readOnly:boolean
+- {actions:Action*}
 
 SeparatorPanelItem(PanelItem)
 
@@ -69,5 +74,5 @@ BasicPropertyPanelItem(PanelItem):
 EnumPanelItem(PanelItem):
 - enumeration=>Enumeration
 
-Action:
-- icon:string, label:string, functionName:string
+Action (Base):
+- icon:string, label:string, functionName:string, position: number
